@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nido — Agenzia Immobiliare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">Nido<span>.</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">Chi Siamo</a>
+        <a href="#gallery" class="nav__link">Immobili</a>
+        <a href="#contact" class="nav__link">Contatti</a>
+      </nav>
+
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <nav class="mobile-nav">
+      <a href="#home" class="mobile-nav__link">Home</a>
+      <a href="#about" class="mobile-nav__link">Chi Siamo</a>
+      <a href="#gallery" class="mobile-nav__link">Immobili</a>
+      <a href="#contact" class="mobile-nav__link">Contatti</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80" alt="Casa moderna" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title reveal reveal--delay-1">
+        La casa dove<br />
+        <em>scrivere la storia</em><br />
+        di noi.
+      </h1>
+      <p class="hero__sub reveal reveal--delay-2">
+        Aiutiamo le giovani coppie a trovare lo spazio<br class="br-desktop" /> perfetto per costruire il loro futuro insieme.
+      </p>
+      <div class="hero__ctas reveal reveal--delay-3">
+        <a href="#gallery" class="btn btn--primary">Scopri gli immobili</a>
+        <a href="#contact" class="btn btn--ghost">Parla con noi</a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- BANNER STRIP -->
+  <div class="strip">
+    <div class="strip__stats">
+      <div class="strip__item">
+        <strong class="strip__num" data-target="10" data-suffix="+">10+</strong>
+        <span>Anni di esperienza</span>
+      </div>
+      <div class="strip__sep">✦</div>
+      <div class="strip__item">
+        <strong class="strip__num" data-target="300" data-suffix="+">300+</strong>
+        <span>Immobili venduti</span>
+      </div>
+      <div class="strip__sep">✦</div>
+      <div class="strip__item">
+        <strong class="strip__num" data-target="98" data-suffix="%">98%</strong>
+        <span>Clienti soddisfatti</span>
+      </div>
+    </div>
+  </div>
+  <!-- CHI SIAMO -->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="about__intro reveal">
+        <h2 class="section-title">Non vendiamo case.<br /><em>Creiamo nidi.</em></h2>
+        <p class="about__lead">Un team giovane e appassionato, specializzato nell'accompagnare le coppie nel momento più importante della loro vita: trovare la prima casa insieme.</p>
+      </div>
+
+      <div class="about__showcase reveal">
+        <div class="about__showcase-card">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Soggiorno luminoso" />
+        </div>
+        <div class="about__showcase-card">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Cucina moderna" />
+        </div>
+        <div class="about__showcase-card">
+          <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80" alt="Camera da letto" />
+        </div>
+      </div>
+
+      <div class="about__cta-wrap reveal">
+        <a href="#gallery" class="btn btn--primary">Scopri gli immobili</a>
+        <p class="about__cta-sub">Oltre 300 immobili verificati, selezionati solo per te</p>
+      </div>
+
+      <div class="about__features reveal">
+        <div class="about__feature">
+          <i class="fa-solid fa-circle-check"></i>
+          <strong>Selezione curata</strong>
+          <p>Solo immobili verificati e di qualità</p>
+        </div>
+        <div class="about__feature">
+          <i class="fa-solid fa-handshake"></i>
+          <strong>Supporto totale</strong>
+          <p>Dalla visita al rogito, siamo con voi</p>
+        </div>
+        <div class="about__feature">
+          <i class="fa-solid fa-comments"></i>
+          <strong>Consulenza gratuita</strong>
+          <p>Nessun costo per il primo incontro</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERIA IMMOBILI -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery__head">
+        <div>
+          <h2 class="section-title reveal reveal--delay-1">Trova il tuo <em>spazio</em></h2>
+        </div>
+        <butt
+        on class="gallery__filter-btn reveal reveal--delay-2" id="filterToggle" aria-label="Apri filtri">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+          Filtri
+          <span class="filter-badge" id="filterBadge">0</span>
+        </button>
+      </div>
+
+      <div class="gallery__layout">
+
+        <!-- SIDEBAR FILTRI -->
+        <aside class="filter-sidebar" id="filterSidebar" aria-label="Filtri di ricerca">
+          <div class="filter-sidebar__head">
+            <span class="filter-sidebar__title">Filtra</span>
+            <div class="filter-sidebar__actions">
+              <button class="filter-sidebar__reset" id="filterReset">Cancella tutto</button>
+              <button class="filter-sidebar__close" id="filterClose" aria-label="Chiudi">✕</button>
+            </div>
+          </div>
+
+          <div class="filter-groups">
+
+            <div class="filter-group">
+              <h4 class="filter-group__title">Tipologia</h4>
+              <label class="filter-check"><input type="checkbox" name="type" value="bilocale"><span>Bilocale</span></label>
+              <label class="filter-check"><input type="checkbox" name="type" value="trilocale"><span>Trilocale</span></label>
+              <label class="filter-check"><input type="checkbox" name="type" value="attico"><span>Attico</span></label>
+            </div>
+
+            <div class="filter-group">
+              <h4 class="filter-group__title">Prezzo</h4>
+              <label class="filter-check"><input type="checkbox" name="price" value="0-200000"><span>Fino a €200.000</span></label>
+              <label class="filter-check"><input type="checkbox" name="price" value="200000-350000"><span>€200.000 – €350.000</span></label>
+              <label class="filter-check"><input type="checkbox" name="price" value="350000-9999999"><span>Oltre €350.000</span></label>
+            </div>
+
+            <div class="filter-group">
+              <h4 class="filter-group__title">Superficie</h4>
+              <label class="filter-check"><input type="checkbox" name="mq" value="0-70"><span>Fino a 70 m²</span></label>
+              <label class="filter-check"><input type="checkbox" name="mq" value="70-100"><span>70 – 100 m²</span></label>
+              <label class="filter-check"><input type="checkbox" name="mq" value="100-9999"><span>Oltre 100 m²</span></label>
+            </div>
+
+            <div class="filter-group">
+              <h4 class="filter-group__title">Camere</h4>
+              <label class="filter-check"><input type="checkbox" name="rooms" value="2"><span>2 camere</span></label>
+              <label class="filter-check"><input type="checkbox" name="rooms" value="3"><span>3 camere</span></label>
+              <label class="filter-check"><input type="checkbox" name="rooms" value="4"><span>4+ camere</span></label>
+            </div>
+
+            <div class="filter-group">
+              <h4 class="filter-group__title">Disponibilità</h4>
+              <label class="filter-check"><input type="checkbox" name="status" value="disponibile"><span>Disponibile</span></label>
+              <label class="filter-check"><input type="checkbox" name="status" value="venduto"><span>Venduto</span></label>
+            </div>
+
+            <div class="filter-group">
+              <h4 class="filter-group__title">Zona</h4>
+              <label class="filter-check"><input type="checkbox" name="zone" value="napoli-centro"><span>Napoli Centro</span></label>
+              <label class="filter-check"><input type="checkbox" name="zone" value="napoli-collina"><span>Napoli Collina</span></label>
+              <label class="filter-check"><input type="checkbox" name="zone" value="napoli-periferia"><span>Napoli Periferia</span></label>
+              <label class="filter-check"><input type="checkbox" name="zone" value="pozzuoli"><span>Pozzuoli</span></label>
+            </div>
+
+          </div>
+        </aside>
+
+        <div class="filter-overlay" id="filterOverlay"></div>
+
+        <!-- RISULTATI -->
+        <div class="gallery__results">
+          <div class="gallery__results-bar">
+            <span class="results-count" id="resultsCount">6 immobili</span>
+            <div class="active-filters" id="activeFilters"></div>
+          </div>
+
+          <div class="properties" id="properties">
+
+            <!-- Card 1 -->
+            <article class="property-card reveal" data-type="bilocale" data-price="185000" data-mq="65" data-rooms="2" data-status="disponibile" data-zone="napoli-collina">
+              <div class="property-card__img-wrap">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Bilocale luminoso" class="property-card__img" />
+                <span class="property-card__badge">Bilocale</span>
+                <span class="property-card__status">Disponibile</span>
+              </div>
+              <div class="property-card__body">
+                <h3 class="property-card__title">Bilocale luminoso al centro</h3>
+                <p class="property-card__location">Napoli, Vomero</p>
+                <div class="property-card__details">
+                  <span>2 camere</span>
+                  <span>1 bagno</span>
+                  <span>65 m²</span>
+                </div>
+                <div class="property-card__footer">
+                  <span class="property-card__price">€ 185.000</span>
+                  <button class="btn btn--small" onclick="openModal(0)">Dettagli</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="property-card reveal" data-type="trilocale" data-price="310000" data-mq="92" data-rooms="3" data-status="venduto" data-zone="napoli-collina">
+              <div class="property-card__img-wrap">
+                <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80" alt="Trilocale moderno" class="property-card__img" />
+                <span class="property-card__badge">Trilocale</span>
+                <span class="property-card__status property-card__status--sold">Venduto</span>
+              </div>
+              <div class="property-card__body">
+                <h3 class="property-card__title">Trilocale con terrazza panoramica</h3>
+                <p class="property-card__location">Napoli, Posillipo</p>
+                <div class="property-card__details">
+                  <span>3 camere</span>
+                  <span>2 bagni</span>
+                  <span>92 m²</span>
+                </div>
+                <div class="property-card__footer">
+                  <span class="property-card__price">€ 310.000</span>
+                  <button class="btn btn--small" onclick="openModal(1)">Dettagli</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="property-card reveal" data-type="attico" data-price="520000" data-mq="130" data-rooms="4" data-status="disponibile" data-zone="napoli-centro">
+              <div class="property-card__img-wrap">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Attico esclusivo" class="property-card__img" />
+                <span class="property-card__badge">Attico</span>
+                <span class="property-card__status">Disponibile</span>
+              </div>
+              <div class="property-card__body">
+                <h3 class="property-card__title">Attico con vista mare</h3>
+                <p class="property-card__location">Napoli, Chiaia</p>
+                <div class="property-card__details">
+                  <span>4 camere</span>
+                  <span>2 bagni</span>
+                  <span>130 m²</span>
+                </div>
+                <div class="property-card__footer">
+                  <span class="property-card__price">€ 520.000</span>
+                  <button class="btn btn--small" onclick="openModal(2)">Dettagli</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="property-card reveal" data-type="bilocale" data-price="162000" data-mq="58" data-rooms="2" data-status="disponibile" data-zone="napoli-periferia">
+              <div class="property-card__img-wrap">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80" alt="Bilocale ristrutturato" class="property-card__img" />
+                <span class="property-card__badge">Bilocale</span>
+                <span class="property-card__status">Disponibile</span>
+              </div>
+              <div class="property-card__body">
+                <h3 class="property-card__title">Bilocale ristrutturato con balcone</h3>
+                <p class="property-card__location">Napoli, Fuorigrotta</p>
+                <div class="property-card__details">
+                  <span>2 camere</span>
+                  <span>1 bagno</span>
+                  <span>58 m²</span>
+                </div>
+                <div class="property-card__footer">
+                  <span class="property-card__price">€ 162.000</span>
+                  <button class="btn btn--small" onclick="openModal(3)">Dettagli</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="property-card reveal" data-type="trilocale" data-price="228000" data-mq="80" data-rooms="3" data-status="disponibile" data-zone="pozzuoli">
+              <div class="property-card__img-wrap">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80" alt="Trilocale in verde" class="property-card__img" />
+                <span class="property-card__badge">Trilocale</span>
+                <span class="property-card__status">Disponibile</span>
+              </div>
+              <div class="property-card__body">
+                <h3 class="property-card__title">Trilocale in residence con giardino</h3>
+                <p class="property-card__location">Pozzuoli, Rione Toiano</p>
+                <div class="property-card__details">
+                  <span>3 camere</span>
+                  <span>1 bagno</span>
+                  <span>80 m²</span>
+                </div>
+                <div class="property-card__footer">
+                  <span class="property-card__price">€ 228.000</span>
+                  <button class="btn btn--small" onclick="openModal(4)">Dettagli</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="property-card reveal" data-type="attico" data-price="395000" data-mq="110" data-rooms="3" data-status="disponibile" data-zone="napoli-periferia">
+              <div class="property-card__img-wrap">
+                <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&q=80" alt="Attico duplex" class="property-card__img" />
+                <span class="property-card__badge">Attico</span>
+                <span class="property-card__status">Disponibile</span>
+              </div>
+              <div class="property-card__body">
+                <h3 class="property-card__title">Attico duplex in nuova costruzione</h3>
+                <p class="property-card__location">Napoli, Bagnoli</p>
+                <div class="property-card__details">
+                  <span>3 camere</span>
+                  <span>2 bagni</span>
+                  <span>110 m²</span>
+                </div>
+                <div class="property-card__footer">
+                  <span class="property-card__price">€ 395.000</span>
+                  <button class="btn btn--small" onclick="openModal(5)">Dettagli</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="gallery__no-results" id="noResults">
+            <div class="no-results__icon">🔍</div>
+            <p class="no-results__title">Nessun immobile trovato</p>
+            <p class="no-results__sub">Prova a modificare i filtri di ricerca</p>
+            <button class="btn btn--primary" onclick="resetFilters()">Cancella filtri</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FORM RICHIESTA IMMOBILE -->
+      <div class="inquiry-wrap reveal">
+            <div class="inquiry-card">
+
+              <div class="inquiry-card__header">
+                <div>
+                  <h3 class="inquiry-card__title">Descrivi il tuo <em>immobile ideale</em></h3>
+                  <p class="inquiry-card__sub">Compila il form e riceverai una selezione personalizzata entro 24 ore.</p>
+                </div>
+                <div class="inquiry-card__badge">
+                  <span class="inquiry-card__badge-num">24h</span>
+                  <span class="inquiry-card__badge-text">Risposta<br>garantita</span>
+                </div>
+              </div>
+
+              <form class="inquiry" id="inquiryForm" novalidate>
+
+                <!-- Tipologia + Scopo -->
+                <div class="inquiry__row">
+                  <div class="inquiry__field">
+                    <span class="inquiry__label">Tipologia cercata</span>
+                    <div class="pill-group">
+                      <label class="pill"><input type="checkbox" name="tipologia" value="bilocale"><span>Bilocale</span></label>
+                      <label class="pill"><input type="checkbox" name="tipologia" value="trilocale"><span>Trilocale</span></label>
+                      <label class="pill"><input type="checkbox" name="tipologia" value="quadrilocale"><span>Quadrilocale</span></label>
+                      <label class="pill"><input type="checkbox" name="tipologia" value="attico"><span>Attico</span></label>
+                      <label class="pill"><input type="checkbox" name="tipologia" value="villa"><span>Villa</span></label>
+                    </div>
+                  </div>
+                  <div class="inquiry__field inquiry__field--sm">
+                    <span class="inquiry__label">Scopo</span>
+                    <div class="pill-group">
+                      <label class="pill"><input type="radio" name="scopo" value="acquisto"><span>Acquisto</span></label>
+                      <label class="pill"><input type="radio" name="scopo" value="affitto"><span>Affitto</span></label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Budget + Superficie + Camere + Piano -->
+                <div class="inquiry__grid-4">
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-budget">Budget massimo</label>
+                    <select id="inq-budget" name="budget" class="inquiry__select">
+                      <option value="">Seleziona</option>
+                      <option>Fino a €150.000</option>
+                      <option>€150.000 – €250.000</option>
+                      <option>€250.000 – €400.000</option>
+                      <option>€400.000 – €600.000</option>
+                      <option>Oltre €600.000</option>
+                    </select>
+                  </div>
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-mq">Superficie</label>
+                    <select id="inq-mq" name="superficie" class="inquiry__select">
+                      <option value="">Seleziona</option>
+                      <option>Fino a 60 m²</option>
+                      <option>60 – 80 m²</option>
+                      <option>80 – 110 m²</option>
+                      <option>Oltre 110 m²</option>
+                    </select>
+                  </div>
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-camere">Camere</label>
+                    <select id="inq-camere" name="camere" class="inquiry__select">
+                      <option value="">Seleziona</option>
+                      <option>1 camera</option>
+                      <option>2 camere</option>
+                      <option>3 camere</option>
+                      <option>4+ camere</option>
+                    </select>
+                  </div>
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-piano">Piano preferito</label>
+                    <select id="inq-piano" name="piano" class="inquiry__select">
+                      <option value="">Indifferente</option>
+                      <option>Basso (1° – 3°)</option>
+                      <option>Alto (4°+)</option>
+                      <option>Ultimo piano / Attico</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Zone -->
+                <div class="inquiry__field">
+                  <span class="inquiry__label">Zone preferite</span>
+                  <div class="pill-group">
+                    <label class="pill"><input type="checkbox" name="zona" value="napoli-centro"><span>Napoli Centro</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="vomero"><span>Vomero</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="posillipo"><span>Posillipo</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="chiaia"><span>Chiaia</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="fuorigrotta"><span>Fuorigrotta</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="bagnoli"><span>Bagnoli</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="pozzuoli"><span>Pozzuoli</span></label>
+                    <label class="pill"><input type="checkbox" name="zona" value="aperto"><span>Aperto a tutto</span></label>
+                  </div>
+                </div>
+
+                <!-- Caratteristiche -->
+                <div class="inquiry__field">
+                  <span class="inquiry__label">Caratteristiche desiderate</span>
+                  <div class="pill-group">
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="terrazza"><span>Terrazza/Balcone</span></label>
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="box-auto"><span>Box/Posto auto</span></label>
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="ascensore"><span>Ascensore</span></label>
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="giardino"><span>Giardino</span></label>
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="vista-mare"><span>Vista mare</span></label>
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="nuova-costruzione"><span>Nuova costruzione</span></label>
+                    <label class="pill"><input type="checkbox" name="caratteristiche" value="ristrutturato"><span>Ristrutturato</span></label>
+                  </div>
+                </div>
+
+                <div class="inquiry__divider"></div>
+
+                <!-- Situazione attuale -->
+                <div class="inquiry__row inquiry__row--three">
+                  <div class="inquiry__field">
+                    <span class="inquiry__label">Siete già proprietari?</span>
+                    <div class="pill-group">
+                      <label class="pill"><input type="radio" name="proprietari" value="si"><span>Sì</span></label>
+                      <label class="pill"><input type="radio" name="proprietari" value="no"><span>No</span></label>
+                    </div>
+                  </div>
+                  <div class="inquiry__field">
+                    <span class="inquiry__label">Mutuo pre-approvato?</span>
+                    <div class="pill-group">
+                      <label class="pill"><input type="radio" name="mutuo" value="si"><span>Sì</span></label>
+                      <label class="pill"><input type="radio" name="mutuo" value="da-valutare"><span>Da valutare</span></label>
+                      <label class="pill"><input type="radio" name="mutuo" value="no"><span>Acquisto diretto</span></label>
+                    </div>
+                  </div>
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-quando">Entro quando vorreste trovare casa?</label>
+                    <select id="inq-quando" name="tempistiche" class="inquiry__select">
+                      <option value="">Seleziona</option>
+                      <option>Il prima possibile</option>
+                      <option>Entro 3 mesi</option>
+                      <option>Entro 6 mesi</option>
+                      <option>Entro un anno</option>
+                      <option>Sto solo esplorando</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="inquiry__divider"></div>
+
+                <!-- Dati di contatto -->
+                <div class="inquiry__grid-3">
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-nome">Il vostro nome *</label>
+                    <input type="text" id="inq-nome" name="nome" placeholder="Marco & Giulia" class="inquiry__input" required />
+                  </div>
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-email">Email *</label>
+                    <input type="email" id="inq-email" name="email" placeholder="ciao@voi.it" class="inquiry__input" required />
+                  </div>
+                  <div class="inquiry__field">
+                    <label class="inquiry__label" for="inq-tel">Telefono</label>
+                    <input type="tel" id="inq-tel" name="telefono" placeholder="+39 333 123 4567" class="inquiry__input" />
+                  </div>
+                </div>
+
+                <!-- Note -->
+                <div class="inquiry__field">
+                  <label class="inquiry__label" for="inq-note">Note aggiuntive</label>
+                  <textarea id="inq-note" name="note" rows="3" placeholder="Qualsiasi dettaglio che ci aiuti a trovare la casa giusta per voi..." class="inquiry__textarea"></textarea>
+                </div>
+
+                <div class="inquiry__footer">
+                  <p class="inquiry__privacy">Inviando il form accettate la nostra <a href="#">Privacy Policy</a>. I dati verranno utilizzati esclusivamente per la ricerca dell'immobile.</p>
+                  <button type="submit" class="btn btn--primary inquiry__submit">Invia la mia richiesta →</button>
+                </div>
+
+                <div class="inquiry__success" id="inquirySuccess">
+                  🎉 Richiesta ricevuta! Vi contatteremo entro 24 ore con una selezione personalizzata.
+                </div>
+
+              </form>
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL IMMOBILE -->
+  <div class="modal" id="modal">
+    <div class="modal__backdrop" onclick="closeModal()"></div>
+    <div class="modal__box">
+      <button class="modal__close" onclick="closeModal()">✕</button>
+      <div class="modal__img-wrap">
+        <img src="" alt="" class="modal__img" id="modalImg" />
+      </div>
+      <div class="modal__content">
+        <span class="property-card__badge" id="modalBadge"></span>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__location" id="modalLocation"></p>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="modal__details" id="modalDetails"></div>
+        <div class="modal__footer">
+          <span class="modal__price" id="modalPrice"></span>
+          <a href="#contact" class="btn btn--primary" onclick="closeModal()">Richiedi info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title reveal reveal--delay-1" style="text-align:center;">Le loro <em>parole</em></h2>
+
+      <div class="testimonials__grid">
+        <div class="testimonial reveal">
+          <p class="testimonial__text">"Cercavamo casa da 6 mesi senza successo. Con Nido l'abbiamo trovata in tre settimane. Professionali, umani e sempre disponibili."</p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/80?img=32" alt="Marco e Giulia" class="testimonial__avatar" />
+            <div>
+              <strong>Marco & Giulia</strong>
+              <span>Napoli, 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal reveal--delay-1">
+          <p class="testimonial__text">"Il team ci ha seguiti passo passo, spiegando ogni documento. Mai sentiti soli. Il nostro bilocale è esattamente quello che sognavo."</p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/80?img=44" alt="Sara e Lorenzo" class="testimonial__avatar" />
+            <div>
+              <strong>Sara & Lorenzo</strong>
+              <span>Pozzuoli, 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial reveal reveal--delay-2">
+          <p class="testimonial__text">"Pensavamo che acquistare casa fosse complicatissimo. Nido ci ha dimostrato il contrario. Consigliatissimi a tutte le coppie!"</p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/80?img=58" alt="Anna e Davide" class="testimonial__avatar" />
+            <div>
+              <strong>Anna & Davide</strong>
+              <span>Napoli, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__left">
+          <h2 class="section-title reveal reveal--delay-1">Iniziamo<br /><em>insieme.</em></h2>
+          <p class="contact__sub reveal reveal--delay-2">
+            Raccontaci la vostra storia. Dove volete vivere, cosa sognate, quanto potete investire. Troveremo la soluzione giusta per voi.
+          </p>
+
+          <div class="contact__info reveal reveal--delay-3">
+            <div class="contact__info-item">
+              <div>
+                <strong>Ufficio</strong>
+                <p>Via Toledo 123, Napoli</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div>
+                <strong>Telefono</strong>
+                <p>+39 081 123 4567</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div>
+                <strong>Email</strong>
+                <p>ciao@nidoimmobiliare.it</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <div>
+                <strong>Orari</strong>
+                <p>Lun–Ven: 9:00 – 18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__right reveal reveal--delay-2">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Il vostro nome</label>
+                <input type="text" id="name" name="name" placeholder="Marco & Giulia" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ciao@voi.it" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="phone">Telefono (opzionale)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+39 333 123 4567" />
+            </div>
+            <div class="form__group">
+              <label for="interest">Cosa cercate?</label>
+              <select id="interest" name="interest">
+                <option value="">Seleziona una tipologia</option>
+                <option>Bilocale</option>
+                <option>Trilocale</option>
+                <option>Attico</option>
+                <option>Altro / Non lo so ancora</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message">Il vostro sogno</label>
+              <textarea id="message" name="message" rows="4" placeholder="Raccontateci dove volete vivere, cosa è importante per voi..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Invia il messaggio ✉️</button>
+            <div class="form__success" id="formSuccess">
+              🎉 Messaggio inviato! Vi contatteremo presto.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo">Nido<span>.</span></a>
+          <p>Aiutiamo le giovani coppie a trovare lo spazio dove costruire la loro vita.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Navigazione</h4>
+          <a href="#home">Home</a>
+          <a href="#about">Chi Siamo</a>
+          <a href="#gallery">Immobili</a>
+          <a href="#contact">Contatti</a>
+        </div>
+        <div class="footer__links">
+          <h4>Seguici</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Nido Immobiliare. Tutti i diritti riservati.</p>
+        <p>P.IVA 01234567890 — <a href="#">Privacy Policy</a> — <a href="#">Cookie Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Torna su">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- BOTTOM BAR -->
+  <div class="bottom-bar" id="bottomBar">
+    <a href="#home" class="bottom-bar__item" data-section="home">
+      <svg class="bottom-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#gallery" class="bottom-bar__item" data-section="gallery">
+      <svg class="bottom-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+      </svg>
+      <span>Immobili</span>
+    </a>
+    <a href="tel:+390811234567" class="bottom-bar__item bottom-bar__item--cta">
+      <svg class="bottom-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.06 6.06l1.92-1.92a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7a2 2 0 0 1 1.72 2.06z"/>
+      </svg>
+      <span>Chiama</span>
+    </a>
+    <a href="#contact" class="bottom-bar__item" data-section="contact">
+      <svg class="bottom-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+      </svg>
+      <span>Contatti</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
