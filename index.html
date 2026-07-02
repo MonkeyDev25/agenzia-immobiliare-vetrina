@@ -43,7 +43,16 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero__bg">
-      <img src="img/hero.jpg" alt="Casa moderna" class="hero__img" />
+      <picture>
+        <source type="image/webp"
+                srcset="img/hero/photo-1600585154340-be6161a56a0c-xs.webp 480w,
+                        img/hero/photo-1600585154340-be6161a56a0c-sm.webp 768w,
+                        img/hero/photo-1600585154340-be6161a56a0c-md.webp 1024w,
+                        img/hero/photo-1600585154340-be6161a56a0c-lg.webp 1280w,
+                        img/hero/photo-1600585154340-be6161a56a0c-xl.webp 1920w"
+                sizes="100vw" />
+        <img src="img/hero/photo-1600585154340-be6161a56a0c-xl.jpg" alt="Casa moderna" class="hero__img" />
+      </picture>
       <div class="hero__overlay"></div>
     </div>
 
@@ -95,13 +104,37 @@
 
       <div class="about__showcase reveal">
         <div class="about__showcase-card">
-          <img src="img/about-1.jpg" alt="Soggiorno luminoso" />
+          <picture>
+            <source type="image/webp"
+                    srcset="img/card-chi-siamo/photo-1586023492125-27b2c045efd7-xs.webp 480w,
+                            img/card-chi-siamo/photo-1586023492125-27b2c045efd7-sm.webp 768w,
+                            img/card-chi-siamo/photo-1586023492125-27b2c045efd7-md.webp 1024w,
+                            img/card-chi-siamo/photo-1586023492125-27b2c045efd7-lg.webp 1280w"
+                    sizes="(max-width: 479px) 90vw, (max-width: 1023px) 30vw, 320px" />
+            <img src="img/card-chi-siamo/photo-1586023492125-27b2c045efd7-md.jpg" alt="Soggiorno luminoso" />
+          </picture>
         </div>
         <div class="about__showcase-card">
-          <img src="img/about-2.jpg" alt="Cucina moderna" />
+          <picture>
+            <source type="image/webp"
+                    srcset="img/card-chi-siamo/photo-1556909114-f6e7ad7d3136-xs.webp 480w,
+                            img/card-chi-siamo/photo-1556909114-f6e7ad7d3136-sm.webp 768w,
+                            img/card-chi-siamo/photo-1556909114-f6e7ad7d3136-md.webp 1024w,
+                            img/card-chi-siamo/photo-1556909114-f6e7ad7d3136-lg.webp 1280w"
+                    sizes="(max-width: 479px) 90vw, (max-width: 1023px) 30vw, 320px" />
+            <img src="img/card-chi-siamo/photo-1556909114-f6e7ad7d3136-md.jpg" alt="Cucina moderna" />
+          </picture>
         </div>
         <div class="about__showcase-card">
-          <img src="img/about-3.jpg" alt="Camera da letto" />
+          <picture>
+            <source type="image/webp"
+                    srcset="img/card-chi-siamo/photo-1522771739844-6a9f6d5f14af-xs.webp 480w,
+                            img/card-chi-siamo/photo-1522771739844-6a9f6d5f14af-sm.webp 768w,
+                            img/card-chi-siamo/photo-1522771739844-6a9f6d5f14af-md.webp 1024w,
+                            img/card-chi-siamo/photo-1522771739844-6a9f6d5f14af-lg.webp 1280w"
+                    sizes="(max-width: 479px) 90vw, (max-width: 1023px) 30vw, 320px" />
+            <img src="img/card-chi-siamo/photo-1522771739844-6a9f6d5f14af-md.jpg" alt="Camera da letto" />
+          </picture>
         </div>
       </div>
 
@@ -219,7 +252,14 @@
             <!-- Card 1 -->
             <article class="property-card reveal" data-type="bilocale" data-price="185000" data-mq="65" data-rooms="2" data-status="disponibile" data-zone="napoli-collina">
               <div class="property-card__img-wrap">
-                <img src="img/prop-1.jpg" alt="Bilocale luminoso" class="property-card__img" />
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/immobili/photo-1560448204-e02f11c3d0e2-xs.webp 480w,
+                                  img/immobili/photo-1560448204-e02f11c3d0e2-sm.webp 768w,
+                                  img/immobili/photo-1560448204-e02f11c3d0e2-md.webp 1024w"
+                          sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 350px" />
+                  <img src="img/immobili/photo-1560448204-e02f11c3d0e2-md.jpg" alt="Bilocale luminoso" class="property-card__img" />
+                </picture>
                 <span class="property-card__badge">Bilocale</span>
                 <span class="property-card__status">Disponibile</span>
               </div>
@@ -241,7 +281,14 @@
             <!-- Card 2 -->
             <article class="property-card reveal" data-type="trilocale" data-price="310000" data-mq="92" data-rooms="3" data-status="venduto" data-zone="napoli-collina">
               <div class="property-card__img-wrap">
-                <img src="img/prop-2.jpg" alt="Trilocale moderno" class="property-card__img" />
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/immobili/photo-1502005229762-cf1b2da7c5d6-xs.webp 480w,
+                                  img/immobili/photo-1502005229762-cf1b2da7c5d6-sm.webp 768w,
+                                  img/immobili/photo-1502005229762-cf1b2da7c5d6-md.webp 1024w"
+                          sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 350px" />
+                  <img src="img/immobili/photo-1502005229762-cf1b2da7c5d6-md.jpg" alt="Trilocale moderno" class="property-card__img" />
+                </picture>
                 <span class="property-card__badge">Trilocale</span>
                 <span class="property-card__status property-card__status--sold">Venduto</span>
               </div>
@@ -263,7 +310,14 @@
             <!-- Card 3 -->
             <article class="property-card reveal" data-type="attico" data-price="520000" data-mq="130" data-rooms="4" data-status="disponibile" data-zone="napoli-centro">
               <div class="property-card__img-wrap">
-                <img src="img/prop-3.jpg" alt="Attico esclusivo" class="property-card__img" />
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/immobili/photo-1512917774080-9991f1c4c750-xs.webp 480w,
+                                  img/immobili/photo-1512917774080-9991f1c4c750-sm.webp 768w,
+                                  img/immobili/photo-1512917774080-9991f1c4c750-md.webp 1024w"
+                          sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 350px" />
+                  <img src="img/immobili/photo-1512917774080-9991f1c4c750-md.jpg" alt="Attico esclusivo" class="property-card__img" />
+                </picture>
                 <span class="property-card__badge">Attico</span>
                 <span class="property-card__status">Disponibile</span>
               </div>
@@ -285,7 +339,14 @@
             <!-- Card 4 -->
             <article class="property-card reveal" data-type="bilocale" data-price="162000" data-mq="58" data-rooms="2" data-status="disponibile" data-zone="napoli-periferia">
               <div class="property-card__img-wrap">
-                <img src="img/prop-4.jpg" alt="Bilocale ristrutturato" class="property-card__img" />
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/immobili/photo-1522708323590-d24dbb6b0267-xs.webp 480w,
+                                  img/immobili/photo-1522708323590-d24dbb6b0267-sm.webp 768w,
+                                  img/immobili/photo-1522708323590-d24dbb6b0267-md.webp 1024w"
+                          sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 350px" />
+                  <img src="img/immobili/photo-1522708323590-d24dbb6b0267-md.jpg" alt="Bilocale ristrutturato" class="property-card__img" />
+                </picture>
                 <span class="property-card__badge">Bilocale</span>
                 <span class="property-card__status">Disponibile</span>
               </div>
@@ -307,7 +368,14 @@
             <!-- Card 5 -->
             <article class="property-card reveal" data-type="trilocale" data-price="228000" data-mq="80" data-rooms="3" data-status="disponibile" data-zone="pozzuoli">
               <div class="property-card__img-wrap">
-                <img src="img/prop-5.jpg" alt="Trilocale in verde" class="property-card__img" />
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/immobili/photo-1493809842364-78817add7ffb-xs.webp 480w,
+                                  img/immobili/photo-1493809842364-78817add7ffb-sm.webp 768w,
+                                  img/immobili/photo-1493809842364-78817add7ffb-md.webp 1024w"
+                          sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 350px" />
+                  <img src="img/immobili/photo-1493809842364-78817add7ffb-md.jpg" alt="Trilocale in verde" class="property-card__img" />
+                </picture>
                 <span class="property-card__badge">Trilocale</span>
                 <span class="property-card__status">Disponibile</span>
               </div>
@@ -329,7 +397,14 @@
             <!-- Card 6 -->
             <article class="property-card reveal" data-type="attico" data-price="395000" data-mq="110" data-rooms="3" data-status="disponibile" data-zone="napoli-periferia">
               <div class="property-card__img-wrap">
-                <img src="img/prop-6.jpg" alt="Attico duplex" class="property-card__img" />
+                <picture>
+                  <source type="image/webp"
+                          srcset="img/immobili/photo-1565182999561-18d7dc61c393-xs.webp 480w,
+                                  img/immobili/photo-1565182999561-18d7dc61c393-sm.webp 768w,
+                                  img/immobili/photo-1565182999561-18d7dc61c393-md.webp 1024w"
+                          sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 350px" />
+                  <img src="img/immobili/photo-1565182999561-18d7dc61c393-md.jpg" alt="Attico duplex" class="property-card__img" />
+                </picture>
                 <span class="property-card__badge">Attico</span>
                 <span class="property-card__status">Disponibile</span>
               </div>
