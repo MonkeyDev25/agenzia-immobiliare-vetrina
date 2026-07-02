@@ -9,7 +9,7 @@
 ----------------------------------------------- */
 const properties = [
   {
-    img: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&q=80',
+    img: 'img/prop-1.jpg',
     badge: 'Bilocale',
     title: 'Bilocale luminoso al centro',
     location: '📍 Napoli, Vomero',
@@ -18,7 +18,7 @@ const properties = [
     details: ['🛏 2 camere', '🛁 1 bagno', '📐 65 m²', '🏢 5° piano', '🅿️ Posto auto', '🌡 Riscaldamento centralizzato'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=900&q=80',
+    img: 'img/prop-2.jpg',
     badge: 'Trilocale',
     title: 'Trilocale con terrazza panoramica',
     location: '📍 Napoli, Posillipo',
@@ -27,7 +27,7 @@ const properties = [
     details: ['🛏 3 camere', '🛁 2 bagni', '📐 92 m²', '🌅 Terrazza 25 m²', '🅿️ Box auto', '🔒 Portiere h24'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
+    img: 'img/prop-3.jpg',
     badge: 'Attico',
     title: 'Attico con vista mare',
     location: '📍 Napoli, Chiaia',
@@ -36,7 +36,7 @@ const properties = [
     details: ['🛏 4 camere', '🛁 2 bagni', '📐 130 m²', '🌅 2 terrazze', '🅿️ 2 Box auto', '🏊 Uso piscina condominiale'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900&q=80',
+    img: 'img/prop-4.jpg',
     badge: 'Bilocale',
     title: 'Bilocale ristrutturato con balcone',
     location: '📍 Napoli, Fuorigrotta',
@@ -45,7 +45,7 @@ const properties = [
     details: ['🛏 2 camere', '🛁 1 bagno', '📐 58 m²', '🌿 Balcone 6 m²', '🅿️ Posto auto', '🏢 2° piano'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=80',
+    img: 'img/prop-5.jpg',
     badge: 'Trilocale',
     title: 'Trilocale in residence con giardino',
     location: '📍 Pozzuoli, Rione Toiano',
@@ -54,7 +54,7 @@ const properties = [
     details: ['🛏 3 camere', '🛁 1 bagno', '📐 80 m²', '🌿 Giardino comune', '🅿️ 2 posti auto', '🏊 Piscina in residence'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=900&q=80',
+    img: 'img/prop-6.jpg',
     badge: 'Attico',
     title: 'Attico duplex in nuova costruzione',
     location: '📍 Napoli, Bagnoli',
