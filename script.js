@@ -70,16 +70,9 @@ const properties = [
 ----------------------------------------------- */
 const nav = document.getElementById('nav');
 
-const handleNavScroll = () => {
-  if (window.scrollY > 60) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
+const handleNavScroll = (y) => {
+  nav.classList.toggle('scrolled', y > 60);
 };
-
-window.addEventListener('scroll', handleNavScroll, { passive: true });
-handleNavScroll();
 
 
 /* -----------------------------------------------
@@ -210,15 +203,21 @@ function applyFilters() {
   const cards = document.querySelectorAll('.property-card');
   let visible = 0;
 
+  const toReveal = [];
   cards.forEach(card => {
     const show = cardMatchesFilters(card, filters);
     card.classList.toggle('hidden', !show);
     if (show) {
       card.classList.remove('visible');
-      void card.offsetWidth;
-      card.classList.add('visible');
+      toReveal.push(card);
       visible++;
     }
+  });
+  // Double rAF restarts the CSS transition without forcing a synchronous layout read.
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      toReveal.forEach(card => card.classList.add('visible'));
+    });
   });
 
   const total = cards.length;
@@ -413,18 +412,37 @@ sections.forEach(s => sectionObserver.observe(s));
 const backToTopBtn = document.getElementById('backToTop');
 const aboutSection = document.getElementById('about');
 
-function checkBackToTop() {
-  if (!aboutSection || !backToTopBtn) return;
-  const threshold = aboutSection.offsetTop + aboutSection.offsetHeight * 0.5;
-  backToTopBtn.classList.toggle('visible', window.scrollY > threshold);
+let backToTopThreshold = 0;
+function updateBackToTopThreshold() {
+  if (!aboutSection) return;
+  backToTopThreshold = aboutSection.offsetTop + aboutSection.offsetHeight * 0.5;
 }
-
-window.addEventListener('scroll', checkBackToTop, { passive: true });
-checkBackToTop();
+updateBackToTopThreshold();
+window.addEventListener('resize', updateBackToTopThreshold, { passive: true });
 
 backToTopBtn && backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+/* -----------------------------------------------
+   SCROLL — single rAF-batched handler
+   (avoids forced-reflow layout thrashing from
+   multiple independent scroll listeners)
+----------------------------------------------- */
+let scrollTicking = false;
+function onScroll() {
+  if (scrollTicking) return;
+  scrollTicking = true;
+  requestAnimationFrame(() => {
+    const y = window.scrollY;
+    handleNavScroll(y);
+    if (backToTopBtn) backToTopBtn.classList.toggle('visible', y > backToTopThreshold);
+    scrollTicking = false;
+  });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 
 /* -----------------------------------------------

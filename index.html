@@ -4,11 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nido — Agenzia Immobiliare</title>
+  <meta name="description" content="Nido Agenzia Immobiliare a Napoli: aiutiamo le giovani coppie a trovare la casa dei loro sogni. Bilocali, trilocali e attichi selezionati, consulenza gratuita e supporto completo." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="img/hero/photo-1600585154340-be6161a56a0c-xs.webp 480w,
+                     img/hero/photo-1600585154340-be6161a56a0c-sm.webp 768w,
+                     img/hero/photo-1600585154340-be6161a56a0c-md.webp 1024w,
+                     img/hero/photo-1600585154340-be6161a56a0c-lg.webp 1280w,
+                     img/hero/photo-1600585154340-be6161a56a0c-xl.webp 1600w"
+        imagesizes="100vw" />
 </head>
 <body>
 
@@ -49,9 +56,9 @@
                         img/hero/photo-1600585154340-be6161a56a0c-sm.webp 768w,
                         img/hero/photo-1600585154340-be6161a56a0c-md.webp 1024w,
                         img/hero/photo-1600585154340-be6161a56a0c-lg.webp 1280w,
-                        img/hero/photo-1600585154340-be6161a56a0c-xl.webp 1920w"
+                        img/hero/photo-1600585154340-be6161a56a0c-xl.webp 1600w"
                 sizes="100vw" />
-        <img src="img/hero/photo-1600585154340-be6161a56a0c-xl.jpg" alt="Casa moderna" class="hero__img" />
+        <img src="img/hero/photo-1600585154340-be6161a56a0c-xl.jpg" alt="Casa moderna" class="hero__img" fetchpriority="high" />
       </picture>
       <div class="hero__overlay"></div>
     </div>
@@ -145,17 +152,17 @@
 
       <div class="about__features reveal">
         <div class="about__feature">
-          <i class="fa-solid fa-circle-check"></i>
+          <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
           <strong>Selezione curata</strong>
           <p>Solo immobili verificati e di qualità</p>
         </div>
         <div class="about__feature">
-          <i class="fa-solid fa-handshake"></i>
+          <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
           <strong>Supporto totale</strong>
           <p>Dalla visita al rogito, siamo con voi</p>
         </div>
         <div class="about__feature">
-          <i class="fa-solid fa-comments"></i>
+          <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"/></svg>
           <strong>Consulenza gratuita</strong>
           <p>Nessun costo per il primo incontro</p>
         </div>
@@ -171,8 +178,7 @@
         <div>
           <h2 class="section-title reveal reveal--delay-1">Trova il tuo <em>spazio</em></h2>
         </div>
-        <butt
-        on class="gallery__filter-btn reveal reveal--delay-2" id="filterToggle" aria-label="Apri filtri">
+        <button class="gallery__filter-btn reveal reveal--delay-2" id="filterToggle" aria-label="Apri filtri">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
           Filtri
           <span class="filter-badge" id="filterBadge">0</span>

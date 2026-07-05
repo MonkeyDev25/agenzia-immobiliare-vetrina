@@ -538,8 +538,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: translateY(-3px);
 }
 
-.about__feature i {
-  font-size: 2rem;
+.about__feature-icon {
+  width: 2rem;
+  height: 2rem;
   color: var(--terra);
 }
 
@@ -1108,7 +1109,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     max-width: 900px;
     gap: 1.25rem;
   }
-  .about__feature i { font-size: 1.75rem; }
+  .about__feature-icon { width: 1.75rem; height: 1.75rem; }
   .about__feature strong { font-size: 0.92rem; }
   .about__feature p { font-size: 0.78rem; }
 
